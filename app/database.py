@@ -1,5 +1,5 @@
 import os
 from pymongo import MongoClient
 
-client = MongoClient(os.getenv("MONGODB_URL"))
+client = MongoClient('mongodb://mongo:27017')
 db = client["pedidos_casal_lanches"]
