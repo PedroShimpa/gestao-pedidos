@@ -4,8 +4,8 @@ from controllers import order_controller, menu_items_controller
 
 app = FastAPI()
 origins = [
-    "http://localhost:3030",  # Adicione aqui o endereço do frontend React
-    # Outros domínios podem ser adicionados se necessário
+    "http://localhost:3030",  
+	"*"
 ]
 
 app.add_middleware(
